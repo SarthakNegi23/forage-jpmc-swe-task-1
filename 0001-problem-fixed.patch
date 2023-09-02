@@ -1,0 +1,29 @@
+From f9db19dce9109a9e01c4739e72ee872750fcb323 Mon Sep 17 00:00:00 2001
+From: SarthakNegi23 <nitinnegi79835@gmail.com>
+Date: Tue, 29 Aug 2023 14:48:39 +0530
+Subject: [PATCH] problem fixed
+
+---
+ add        | 0
+ client3.py | 1 -
+ 2 files changed, 1 deletion(-)
+ delete mode 100644 add
+
+diff --git a/add b/add
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/client3.py b/client3.py
+index 28071f2..581699b 100644
+--- a/client3.py
++++ b/client3.py
+@@ -50,7 +50,6 @@ if __name__ == "__main__":
+     for _ in iter(range(N)):
+         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+ 
+-        """ ----------- Update to get the ratio --------------- """
+         prices={}
+         for quote in quotes:
+             stock, bid_price, ask_price, price = getDataPoint(quote)
+-- 
+2.42.0.windows.1
+
